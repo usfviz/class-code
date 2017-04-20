@@ -8,7 +8,7 @@ ui <- fluidPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output, session) {
-  d <- read.csv("../schools_math_eng_scores.csv")
+  d <- read.csv("schools_math_eng_scores.csv")
   output$mymap <- renderLeaflet({
   m <- leaflet() %>%
     addTiles() %>%
