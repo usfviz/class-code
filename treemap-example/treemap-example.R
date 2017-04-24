@@ -19,3 +19,12 @@ tm <- treemap(GNI2014,
 d3tree2(tm, rootname = "World" )
 
 # Lab assignment
+# install.packages("ggplot2movies")
+library(ggplot2movies)
+data(movies)
+head(movies)
+m <- na.omit(movies)
+
+# Design an interactive treemap visualization for the movies dataset
+# ?treemap to customize various features such as color
+# Can you change the default tooltip?
